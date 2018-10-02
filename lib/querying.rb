@@ -32,7 +32,7 @@ def select_name_and_series_subgenres_of_authors
   SELECT authors.name, subgenres.name
   FROM authors
   INNER JOIN series ON series.author_id = authors.id
-  INNER JONI subgenres ON subgenres.id = series.subgenre_id
+  INNER JOIN subgenres ON subgenres.id = series.subgenre_id
   "
 end
 
